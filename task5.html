@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 4</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      text-align: center;
+    }
+    table {
+      border-collapse: separate;
+      margin: 0 auto;
+    }
+    .outer {
+      border: 5px solid black;
+      border-spacing: 10px;
+      padding: 10px;
+    }
+    .inner {
+      border: 2px solid black;
+      border-spacing: 2px;
+    }
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2><b>Exercise 4</b></h2>
+
+  <p>
+    Construct a pair of tables side by side within another table. Using the table attributes 
+    of <b>cellspacing</b>, <b>cellpadding</b> and <b>border</b>, get your table to look like the following 
+    and center it across the width of the page...
+  </p>
+
+  <!-- الجدول الخارجي -->
+  <table class="outer">
+    <tr>
+      <td>
+        <!-- الجدول الداخلي الأول -->
+        <table class="inner">
+          <tr>
+            <td>Rubber</td>
+            <td>baby</td>
+          </tr>
+          <tr>
+            <td>buggy</td>
+            <td>bumpers</td>
+          </tr>
+        </table>
+      </td>
+
+      <td>
+        <!-- الجدول الداخلي الثاني -->
+        <table class="inner">
+          <tr>
+            <td>She</td>
+            <td>sells</td>
+          </tr>
+          <tr>
+            <td>sea</td>
+            <td>shells</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

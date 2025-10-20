@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 3 - My Tech Stock Picks</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+      background-color: #d9f2d9;
+      padding: 10px;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 6px 10px;
+    }
+
+    th {
+      text-transform: uppercase;
+    }
+
+    /* العمود الأول محاذي لليسار */
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+
+    /* باقي الأعمدة في المنتصف */
+    th:not(:first-child), td:not(:first-child) {
+      text-align: center;
+    }
+
+    /* تظليل الصفوف بالتناوب */
+    tr:nth-child(even) {
+      background-color: #e6ffe6;
+    }
+  </style>
+</head>
+<body>
+
+  <h2><i>My tech stock picks</i></h2>
+
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>SYMBOL</th>
+      <th>CURRENT</th>
+      <th>52WK HI</th>
+      <th>52WK LO</th>
+      <th>P/E RATIO</th>
+    </tr>
+    <tr>
+      <td>Microsoft</td>
+      <td>MSFT</td>
+      <td>516.79</td>
+      <td>555.45</td>
+      <td>344.79</td>
+      <td>28.88</td>
+    </tr>
+    <tr>
+      <td>Cisco Systems</td>
+      <td>CSCO</td>
+      <td>72.12</td>
+      <td>82.00</td>
+      <td>24.13</td>
+      <td>400.69</td>
+    </tr>
+    <tr>
+      <td>America Online</td>
+      <td>AOL</td>
+      <td>63.00</td>
+      <td>95.13</td>
+      <td>38.47</td>
+      <td>350.00</td>
+    </tr>
+    <tr>
+      <td>Qwest Communications</td>
+      <td>Q</td>
+      <td>44.44</td>
+      <td>66.00</td>
+      <td>25.75</td>
+      <td>74.06</td>
+    </tr>
+    <tr>
+      <td>Dell Computers</td>
+      <td>DELL</td>
+      <td>53.59</td>
+      <td>59.11</td>
+      <td>31.38</td>
+      <td>86.97</td>
+    </tr>
+  </table>
+
+</body>
+</html>
